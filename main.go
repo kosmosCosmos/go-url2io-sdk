@@ -16,5 +16,5 @@ date,_:=str.Get("date").String()
 	texts, _ := str.Get("text").String()
 	nexts, _ := str.Get("next").String()
 	getinfo = append(getinfo, urls, date, title, texts, nexts)
-return getinfo
+	return getinfo
 }
