@@ -13,19 +13,19 @@ str,_:=simplejson.NewJson(result)
 title, _ := str.Get("title").String()
 urls,_:=str.Get("url").String()
 date,_:=str.Get("date").String()
-	if text != nil {
+	if text != "" {
 		texts, _ := str.Get("text").String()
 		getinfo = append(getinfo, texts)
 	}
-	if text == nil {
+	if text == "" {
 		content := str.Get("content")
 		getinfo = append(getinfo, content)
 	}
-	if next != nil {
+	if next != "" {
 		nexts, _ := str.Get("next").String()
 		getinfo = append(getinfo, nexts)
 	}
-	if next == nil {}
+	if next == "" {}
 	getinfo = append(getinfo, urls, date, title)
 	return getinfo
 }
