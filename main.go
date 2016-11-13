@@ -17,8 +17,7 @@ date,_:=str.Get("date").String()
 		texts, _ := str.Get("text").String()
 		getinfo = append(getinfo, texts)
 	}
-	if text == "" {
-	}
+	if text == "" {}
 	if next != "" {
 		nexts, _ := str.Get("next").String()
 		getinfo = append(getinfo, nexts)
