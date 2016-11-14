@@ -12,7 +12,7 @@ go get github.com/kosmosCosmos/go-url2io-sdk
 ##使用go-url2io-sdk
 import XXX(你的包别名）"github.com/kosmosCosmos/go-url2io-sdk"
 
-XXX.API(url,token,"text","next")
+XXX.API_article(url,token,"text","next")
 
 不需要text和next参数的打“”和“”。
 
